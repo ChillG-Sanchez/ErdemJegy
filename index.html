@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grades</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row mb-3">
+      <div class="col">
+        <input id="nameInput" type="text" class="form-control" placeholder="Diák neve">
+      </div>
+      <div class="col">
+        <input id="gradeInput" type="number" class="form-control" min="1" max="5" placeholder="Érdemjegy (1-5)">
+      </div>
+      <div class="col">
+        <button id="addButton" class="btn btn-primary">Osztályzás</button>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <input id="searchInput" type="number" class="form-control" min="1" max="5" placeholder="Érdemjegy keresése">
+      </div>
+    </div>
+    <ul id="gradeList" class="list-group"></ul>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
